@@ -1,0 +1,1524 @@
+
+
+// variables
+$primary_color:#27226B;
+$secondary_color:#0493A3;
+
+
+
+
+.body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    
+}
+.ham2 .top {
+    stroke-dasharray: 40 121;
+  }
+  .ham2 .bottom {
+    stroke-dasharray: 40 121;
+  }
+  .ham2.active .top {
+    stroke-dashoffset: -102px;
+  }
+  .ham2.active .bottom {
+    stroke-dashoffset: -102px;
+  }
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .hamRotate.active {
+    transform: rotate(45deg);
+  }
+  .hamRotate180.active {
+    transform: rotate(180deg);
+  }
+  .line {
+    fill:none;
+    transition: stroke-dasharray 400ms,
+    stroke-dashoffset 400ms;
+    stroke:#000;
+    stroke-width:5.5;
+    stroke-linecap:round;
+  }
+
+  header .navlist {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+  
+}
+
+
+
+header{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $primary_color;
+    .navlist{
+        opacity: 0;
+    }
+    .open{
+        opacity: 1;
+        margin-top: 45px;
+        background-color: black;
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+     }
+  
+    img{width: 30%;
+        margin-left: 15px;
+        margin-top: 10px;
+        height: 11vh;
+    }
+    ul{
+        padding-top: 22px;
+        position: absolute;
+        top:37px; 
+        background-color: rgba($color: #000000, $alpha: 0.9);
+        width: 120px;
+        height: 45vh;
+        li{
+            margin-bottom: 25px;
+            a{
+                text-decoration: none;
+                 color: white;
+                 font-size: 18px;}
+        
+        }
+       
+    }
+}
+h2{
+    color: $secondary_color; 
+    margin-bottom: 30px !important;
+    margin-top: -52px !important;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 80%;
+}
+h3{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+p{
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+}
+
+.banner{height: 85vh;
+    .background{
+        display: none;
+        position: absolute;
+        top: -5px; width: 100%;
+        z-index: -2;}
+      h1{
+        font-size: 3em;
+        width: 95%;
+        margin: auto;}
+        p{
+        width: 95%;
+        margin: auto;
+        color: $primary_color;
+        margin-top: 10px;
+        margin-bottom: 20px;}
+       a{
+        position: absolute;
+        bottom: 101px;
+        margin-left: 31%;
+        padding: 12px 25px;
+        border: none;
+        background-color:$secondary_color;
+        color: #ffffff;
+        border-radius: 7px;
+    }
+
+        .banner a {
+            position: absolute;   
+            border: none;
+            background-color: $secondary_color;
+            color: #ffffff;
+           
+        }
+    .banner-img{
+        text-align: center;
+        img{
+            width: 95%;
+            margin: auto;}
+    }
+}
+.register img {width: 100%;}
+.about{
+    #about{
+        flex-direction: column-reverse;
+    }
+    .about-img{
+        width: 95%;
+        margin-top: 40px;
+    }
+    a{
+        text-decoration: none;
+        background-color: $primary_color;
+        padding: 10px 23px;
+        color: white;
+    }
+    p{
+    padding-bottom: 30px;
+}
+}
+.block{
+    display: flex;
+    .inner-block1, .inner-block3{
+        width: 32%;
+    }
+.inner-block2{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+}
+.fund-raising img {
+    height: 38vh;
+}
+.education{
+    margin-top: 80px;
+    button{
+        font-size: 15px;
+        width: 33.3%;
+        padding: 0;
+        display: flex;
+        background: none;
+        border: none;
+        margin-bottom: 20px;
+    }
+p{
+    color: $primary_color;
+    margin-bottom: 20px;
+}
+a{
+    background-color: $primary_color;
+    text-decoration: none;
+    padding: 10px 23px;
+    color: #ffffff;}
+    .active{
+    color: $secondary_color;
+}
+}
+
+.warm-line{
+    img{
+         width: 100%;
+         margin-top: 40px;
+         margin-bottom: 40px;}
+    p{
+        margin-bottom: 24px;
+    }
+    a{
+        background-color: $primary_color;
+        text-decoration: none;
+        padding: 10px 23px;
+        color: #ffffff;
+        width: 65%;
+    }
+   
+}
+.support{
+    background-color: $primary_color;
+    h2,h6{
+        color: #ffffff;
+    }
+    p{
+        margin-bottom: 20px;
+        color: white;
+    }
+    img{
+        width: 100%;
+        margin: auto;
+    }
+    a{
+        background-color: #f8f8f8;
+        text-decoration: none;
+        padding: 10px 23px;
+        color: $secondary_color;
+        border: 2px solid white;
+        width: 90%;
+    }
+    
+}
+
+.gallery{
+    img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .fund-raising{
+        position: relative;
+        .funding{
+            position: absolute;
+            top: 70px;
+            text-align: center;
+            z-index: 11;
+            h2, p{
+                color: white;
+            }
+            p{
+                margin-bottom: 40px;
+            }
+            a{
+                background-color: $secondary_color;
+                text-decoration: none;
+                padding: 10px 23px;
+                color: #ffffff;
+                width: 65%;
+    
+            
+            }
+        }
+        .overlay{
+            background-color: rgba($color: #000000, $alpha: 0.6);
+            position: absolute;
+            top: 19px;
+            width: 100%;
+            height:96%;
+        
+        }
+    }
+}
+.our-team{
+    padding: 10px;
+    .our-team-block, .speak-up{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        a{
+            background-color: #ffffff;
+            text-decoration: none;
+            padding: 10px 23px;
+            color: #000000;
+            border: 2px solid black;
+            width: 80%;
+
+        
+        }
+    }
+}
+.background1{
+    display: block;
+    width: 100%;
+    margin-top: -93px;
+}
+  .background3{
+      display: block;
+      width: 100%;
+      margin-top: 30px;
+    }
+  .background4{
+     display: block;
+     width: 100%;
+     
+  }
+
+.register{
+    .advocate{
+        border-radius: 8px;
+        background-color: $primary_color;
+        padding: 20px;
+        .advocate-block{
+            border: 2px solid white;
+            padding: 10px 10px 30px;
+            h3{
+                color: white;
+            }
+            p{
+                white-space: pre-line;
+                color: rgb(255, 255, 255);
+            }
+            a{
+            text-decoration: none;
+            padding: 10px 23px;
+            color: #ffffff;
+            border: 2px solid rgb(255, 255, 255);
+            width: 80%;
+            }
+
+        }
+    }
+img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+    .volunteer{
+        border-radius: 8px;
+        background-color: $secondary_color;
+        padding: 20px;
+        .volunteer-block{
+            border: 2px solid white;
+            padding: 10px 10px 30px;
+            h3{
+                color: white;
+            }
+            p{
+                white-space: pre-line;
+                color: rgb(255, 255, 255);
+            }
+            a{
+            text-decoration: none;
+            padding: 10px 23px;
+            color: #ffffff;
+            border: 2px solid rgb(255, 255, 255);
+            width: 80%;
+            }    
+        }
+    }
+}
+footer{
+   text-align: center;
+    .newsletter{
+        text-align: center;
+    }
+    p{
+        white-space: pre-line;
+    }
+}
+
+
+@media (min-width:540px) {
+    p {
+        font-size: 25px;
+    }
+    .hero a {
+        bottom:0px;
+        margin-left: 33%;
+        width: 35%;
+
+    }
+    .banner {
+        height: 90vh;
+    }
+}
+
+@media (max-width:414px) {
+    .ham {
+       
+                margin-right: 11px;
+            }
+            header img {
+                width: 30%;
+                margin-left: 15px;
+                margin-top: 10px;
+                height: 8vh;
+            }
+            .banner-text {
+                text-align: center;
+                h1 {
+                    font-size: 2.5em;
+                   
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+            .block {
+                flex-direction: column;
+            }
+            .block .inner-block1, .block .inner-block3 {
+                width: 100%;
+                margin: 10px;
+            }
+            .fund-raising img {
+                height: 58vh;
+            }
+            .banner a {
+                position: absolute;
+                bottom: 132px;
+                margin-left: -17%;
+             
+            }
+            .about a {
+                padding: 12px 34px;
+                margin-left: 33%;
+                border-radius: 7px;
+            }
+            .education a {
+                padding: 12px 23px;
+                border-radius: 7px;
+                margin-left: 30%;
+            }
+            .background3 {
+                display: none;
+               
+            }
+            section.warm-line {
+                margin-top: 109px;
+            }
+            .warm-line a {
+                padding: 12px 23px;
+                margin-left: 18%;
+                border-radius: 7px;
+            }
+            .warm-line img {
+                display: none;
+            }
+            .support {
+                margin-top: 60px;
+                padding-bottom: 50px;
+            }
+            .support {
+                margin-top: 60px;
+            }
+            .support h2, .support h6 {
+                margin-top: 40px !important;
+            }
+            .support a {
+                background:none;
+                text-decoration: none;
+                padding: 12px 75px;
+                color:white;
+                border: 2px solid white;
+                width: 100%;
+             
+            }
+        
+            section.gallery {
+                margin-top: 60px;
+        
+            }
+           .block  {
+            
+            .inner-block1, .inner-block3 {
+                margin: auto;
+                width: 95%;
+        
+            }
+        }
+        .gallery {
+            .fund-raising {
+                .funding {
+                    position: absolute;
+                    top: 158px;
+                    text-align: center;
+                    z-index: 11;
+                }
+            }
+        }
+        .our-team{
+            .our-team-block,.speak-up{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                text-align: center;
+            }  
+        }
+        .register {
+            .advocate{
+                .advocate-block {
+                    border: 2px solid white;
+                    padding: 10px 10px 30px;
+                    text-align: center;
+                }
+            }
+        } 
+        
+        .register{
+            .volunteer{
+                .volunteer-block  {
+                    border: 2px solid white;
+                    padding: 10px 10px 30px;
+                    text-align: center;
+                }
+            }
+          }  
+        
+          .background4 {
+            display: none;
+            width: 100%;
+        }
+        footer {
+            text-align: center;
+            margin-top: 83px;
+        
+            .quicklinks{
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 20px;
+                    padding: 10px;
+                }
+            }
+        }  
+}
+@media (max-width:375px) {
+    .banner a {
+                bottom: 97px !important;
+                margin-left: -20% !important;
+            }
+            .background1 {
+                display: block;
+                width: 100%;
+                margin-top: -4px;
+            }
+            .banner a {
+                bottom: 100px !important;
+                margin-left: -19% !important;
+            }
+            .support a {
+            
+                padding: 12px 50px;
+            }
+            .banner a {
+                position: absolute;
+                bottom: 184px;
+                margin-left: -19%;
+            }
+}
+
+@media (max-width:320px) {
+    .ham {
+                margin-right: 0px !important;
+            }
+            section.about {
+                margin-top: 80px;
+            }
+            .background1 {
+                margin-top: 21px;
+            }
+            .banner-text h1 {
+                font-size: 2.2em !important;
+            }
+            .banner a {
+                bottom: 8px !important;
+                margin-left: -23% !important;
+            }
+            .about a {
+                padding: 12px 34px;
+                margin-left: 25% !important;
+                border-radius: 7px;
+            }
+            h2 {
+                font-size: 21px;
+            }
+            .about-content{
+                h2{
+                    margin-top: -110px !important;
+                }
+            }
+            .education a {
+                margin-left: 24% !important;
+            }
+            .warm-line a {
+                margin-left: 11% !important; 
+            }
+            .support a {
+                padding: 12px 27px !important;
+                color: $secondary_color;
+                border: 2px solid white;
+                width: 100%;
+            }
+            .gallery .fund-raising .funding p {
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+            .gallery .fund-raising .funding {
+                position: absolute;
+                top: 103px !important;
+            }
+            .register .advocate .advocate-block p {
+                font-size: 16px;
+            }
+            .register .volunteer .volunteer-block p {
+                font-size: 16px;
+            }
+}
+
+
+
+@media (min-width:768px) {
+    p {
+                font-size: 30px;
+            }
+            header .open {
+                margin-top: 89px;
+                z-index: 11;
+                text-align: center;
+            }
+        
+            .banner-text {
+                background: rgba(0, 0, 0, 0.7);
+                width: 72%;
+                position: absolute;
+                left: 15%;
+                top: 190px;
+                border-radius: 10px;
+            }
+            .banner p {
+                font-size: 22px;
+                justify-content: left;
+                color: $secondary_color;
+                
+            }
+            .banner .banner-img img {
+             
+                margin-top: 24px;
+            }
+            .banner h1 {
+                font-size: 4em;
+                color: white;
+            }
+            .banner a {
+                bottom: -126px;
+                margin-left: 31%;
+                width: 40%;
+                padding: 20px 28px;
+                border: none;
+                font-size: 20px;
+            }
+            section.about {
+                margin-top: -329px;
+            }
+            .about #about {
+                flex-direction: unset;
+            }
+            h2 {
+                color: $secondary_color;
+                margin-bottom: unset !important;
+                margin-top: 40px !important;
+               width: unset;
+               justify-content: unset;
+            }
+            p {
+                font-size: 14.5px;
+            }
+            .about .about-img {
+                width: 100%;
+                margin-top: 40px;
+                object-fit: cover;
+            }
+            .about{
+                h2{
+                    
+                        display: flex;
+                        margin: auto;
+                
+                }
+            }
+            a { 
+                margin: unset; 
+            }
+            h2 {
+                margin-top: 56px !important;
+                margin-bottom: 30px !important;
+            }
+            
+            .nav {
+                flex-direction: column;
+                align-items: center;
+                padding-top: 4px !important;
+                 button{
+                     width: 100%;
+                     font-size: 22px;
+                     img{
+                         margin-right: 4px;
+                     }
+                 }
+            }
+            .warm-line a {
+                padding: 14px 23px;
+                width: 68%;
+            }
+            .education{
+                h2{
+                    justify-content: center;
+                }
+            }
+            .left-border{
+                border-right: 2px solid blue;
+            }
+            #yoga{
+                display: block !important;
+                height: 94%;
+                object-fit: cover;
+            }
+            .support h2, .support h6, .support p {
+                margin-top: 10px !important;
+            }
+            .fund-raising{
+                img{
+                    height: 35vh;
+                }
+            }
+            .our-team-block{
+                p{
+                    margin-bottom: 28px;
+                }
+            }
+            .gallery .fund-raising {
+                height: 100%;
+            }
+            .gallery{
+                margin-top: 100px;
+            }
+            
+            .fund-raising img {
+                height: 96%;
+            }
+            .image2 img {
+                height: 31vh;
+                object-fit: cover;
+            }
+            .background1{
+                display: none;
+              }
+              .background3{
+                 display: none;
+              }
+              .background4{
+                 display: none;
+                 
+              }
+        
+            .gallery .fund-raising .funding h2, .gallery .fund-raising .funding p {
+                justify-content: center;
+            }
+            .gallery .fund-raising .funding a {
+                margin: auto;
+            }
+            .gallery .fund-raising .funding {
+                top: 76px;
+                margin: 10px;
+            }
+           
+            .gallery .fund-raising .funding {
+                top: 106px;
+            }
+            .our-team {
+                margin-top: 40px;
+                display: flex;
+                justify-content: space-between;
+                background-image: url('images/dhhd.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 61%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+           .our-team p {
+                white-space: pre-line;
+            }
+            .our-team .our-team-block a, .our-team .speak-up a {
+                background-color: #ffffff;
+                text-decoration: none;
+                padding: 10px 23px;
+                color: #000000;
+                border: 2px solid black;
+                width: 98%;
+            }
+           .speak-up a{
+               margin-top: 18px;
+               float: right;
+           }
+           .reg-block{
+               display: flex;
+               align-items: center;
+           }
+           .our-team h3{
+               margin-top: 7px;
+           }
+           .our-team-block{
+               h3{
+                   justify-content: left;
+               }
+           }.our-team .our-team-block a, .our-team .speak-up a {
+           
+            padding: 10px 1px;
+            color: #ffffff;
+            font-size: 12px;
+            border: 2px solid rgb(255, 255, 255);
+            width: 63%;
+            background: none;
+        }
+        
+        
+        .background1{
+            position: absolute;
+            z-index:-11 ;
+            margin-top: 20px;
+        }
+        .background3{
+            position: absolute; 
+           left: 0;
+           z-index: -1;
+           top: -130px;
+           width: 115%;
+        }
+        
+        .support {
+            background-color: $primary_color;
+            margin: 11px;
+        }
+        .support a {
+            background-color: unset;
+            text-decoration: none;
+            padding: 10px 45px;
+            color: $secondary_color;
+            border: 2px solid white;
+            width: 90%;
+        }
+           .speak-up{
+               h3,p{
+                   justify-content: right;
+                   text-align: right;
+                   color: white;
+               }
+           }
+           .register{
+               margin-top: 40px;
+               margin-left: 10px;
+               margin-right: 10px;
+           }
+           .register img {
+        
+            width: 38%;
+            height: 23vh;
+            margin: 10px;
+        }
+        .register .volunteer {
+            padding: 10px;
+            width: 30%;
+        }
+        .register .advocate {
+            padding: 10px;
+            width: 30%;
+        }
+        .support h2{
+            margin-bottom: 0 !important;
+        }
+        .register .volunteer .volunteer-block a {
+            width: 79%;
+            font-size: 9px;
+            margin: auto;
+        }
+        .our-team p,h3 {
+            color: white;
+        }
+        .register .advocate {
+            padding: 10px;
+            height: 90%;
+        }
+        .register .advocate .advocate-block a {
+            width: 86%;
+            font-size: 9px;
+            margin: auto;
+        }
+        .register .advocate .advocate-block {
+            border: 2px solid white;
+            padding: 10px 10px 14px;
+        }
+        .register .volunteer .volunteer-block {
+            border: 2px solid white;
+            padding: 10px 10px 10px;
+        }
+        .register .volunteer {
+            height: 90%;
+        }
+        footer {
+            h2 {
+                justify-content: center;
+            }
+            .footer-content{
+                display: flex;
+                justify-content: space-between;
+                width: 70%;
+                margin: auto;
+                text-align: left;
+                p{
+                    color: $primary_color;
+                }
+                a{
+                    text-align: left;
+                    color:$primary_color;
+                    text-decoration: none;
+                }
+            }
+            .email{
+                width: 53%;
+                padding: 5px;
+            }
+            .fter-btn{
+                width: 20%;
+                padding: 5px;
+                background-color: $primary_color;
+                color: white;
+        
+            }
+            .quicklinks {
+                display: flex;
+                flex-direction: column;
+                a{
+                    font-size: 20px;
+                    width: 100% !important;
+                }
+            }
+         }
+         
+}
+@media (min-width:1024px) {
+    header{
+                display: flex;
+                justify-content: space-between;
+                border: none;
+                .navlist{
+                    opacity: 1;
+                    background: none;
+                    display: flex;
+                    width: unset;
+                    height: 30px;
+                    position: relative;
+                    margin-right: 25px;
+                }
+                svg{
+                    display: none;
+                }
+                img{
+                    height: 7vh;
+                }
+                
+                ul{
+                    padding: 0;
+                
+                    li{
+                        padding-left: 16px;
+                        list-style: none;
+                        a{
+                        
+                            list-style-type: none;
+                            text-decoration: none;
+                            color: #ffffff;
+                            margin: 8px;
+                        }
+                    }
+                }
+            }
+          
+            .banner-text {
+                background:none;
+                width: unset;
+                position: relative;
+                left: 0%;
+                top: -8px;
+            }
+            header .navlist {
+                opacity: 1;
+                background: none;
+            }
+            .banner .background {
+                display: block;
+               
+            }
+            
+            label{
+                display: none;
+            }
+            .background1{
+              display: none;
+            }
+            .background3{
+               display: none;
+            }
+            .background4{
+               display: none;
+               
+            }
+            .ham {
+                margin-right: 11px;
+                margin-right: -166px;
+                margin-top: 10px;
+            }
+            header .menu-list {
+                opacity: 1;
+                -webkit-transition: 0.8s ease;
+                transition: 0.8s ease;
+                width: 41%;
+                background: none;
+                height: 30px;
+                position: relative;
+                top: 0;
+                margin-right: 18px;
+                #menu{
+                    display: flex;
+                    margin-right:10px;
+                }
+                
+            }
+            header img {
+                width: 164px;
+                margin-left: 15px;
+                margin-top: 21px;
+            }
+            
+            p{
+                white-space: pre-line;
+                font-size: 20px;
+            }
+            .banner {
+                height: initial;
+                display: flex;
+            }
+            .banner .background {
+                position: absolute;
+                top: -12px;
+                width: 100%;
+                object-fit: cover;
+                z-index: -2;
+            }
+            .banner-text{
+                width: 55%;
+                margin-top: 12px;
+            }
+            .banner h1{
+                color: white;
+            }
+            .banner p {
+                font-size: 20px;
+                margin-top: 55px;
+                color:$primary_color;
+        
+            }
+         
+            .banner a {
+                bottom: -8%;
+                margin-left: 41%;
+                width: 48%;
+                padding: 20px 12px;
+                text-align: center;
+                left: -38%;
+                border-radius: 5px;
+            }
+            
+            
+            .banner .hero-img img {
+                margin-top: 33px;
+            }
+            .about p{
+                justify-content: left;
+            }
+            section.about {
+                margin-top: 100px;
+            }
+            .about #about {
+                align-items: center;
+            }
+            .nav {
+                padding-top: 60px !important;
+            }
+            .left-border {
+                border-right: 2px solid $primary_color;
+                margin-top: 8px;
+                height: 21vh;
+            }
+            .education p {
+               justify-content: left;
+            }
+            .warm-line p{
+                justify-content: left;
+            }
+            .support p{
+                margin-top: 0 !important;
+            }
+            .support img {
+                height: 100%;
+            }
+            .reg-block {
+                align-items: center;
+            }
+        
+            .support a {
+                padding: 10px 91px;
+              
+            }
+            .gallery .fund-raising .funding {
+                top: 131px;
+                left: 29px;
+            }
+        
+            .image2 img {
+                height: 21vh;
+            }
+            .gallery .fund-raising .overlay {
+                height: 89%;
+            }
+            .fund-raising img {
+                height: 89%;
+            }
+            #yoga {
+                height: 86%;
+               
+            }
+
+            footer{
+                position: relative;
+                margin-top: 100px;
+                .background4 {
+                    display: block;
+                    position: absolute;
+                    z-index: -111;
+                    bottom: 0;
+                    height: 70vh;
+                }
+                .footer-content {
+                    width: 49%;
+                    margin-top: 70px;
+                }
+                .email {
+                    width: 38%;
+                    padding: 11px;
+                    border: none;
+                }
+                .fter-btn{
+                    width: 10%;
+                    padding: 11px;
+                    border: none;
+                }
+                .quicklinks {
+                    display: inline-block;
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        width: 100%;
+                        font-size: 24px;
+                    }
+                }
+            }          
+            
+}
+@media (min-width:1200px) {
+
+    p{
+        font-size: 22px;
+        color: $primary_color;
+        font-weight: 300;
+    }
+    
+    header{
+        img {
+        height: unset;
+        margin-left: 60px;
+    }
+   
+    }
+    header ul li a {
+     
+        font-size: 22px;
+        font-weight: 300;
+    }
+    
+         
+            .banner{
+                .background {
+                    height: 85vh;
+                    width: 100%;
+                    top: -100px;
+                    
+                }
+                .banner-text {
+                    width: 55%;
+                    margin-top: 40px;
+                    margin-left:50px;
+                    h1{
+                        white-space: pre-line;
+                        font-weight:400;
+                        font-size: 70px;
+
+                    }
+                    p {
+                        margin-top: 75px;
+                    }
+                   
+                }
+                .banner-img{
+                    width: 90%;
+                    .banner-img img {
+                        width: 95%;
+                        margin-top: 20px;
+                       
+                    }
+                }
+                a {
+                    bottom: 0%;
+                    left: -38%;
+                    font-size: 22px;
+                    padding: 8px 8px;
+                    width: 187px;
+                }
+            } 
+            
+            
+            .background1 {
+                position: relative;
+                margin-top: 0px;
+                display: block;
+            }
+            
+                .about {
+                    margin-top: -300px;
+                    a {
+                        padding: 11px 30px;
+                        font-size: 22px;
+                        width: 34%;
+                        border-radius: 6px;
+                    }
+            }
+
+            section.about {
+                margin-top: -150px;
+            }
+            .education {
+                margin-top: 150px;
+                position: relative;
+                a{
+                margin-left: 22px;
+                font-size: 22px;
+                width: 35%;
+                }
+                p{
+                margin-left: 22px;
+                }
+            }
+
+           
+        
+           
+            .background3 {
+                display: block;
+                width: 100%;
+                object-fit: contain;
+              
+            }
+
+            .support {
+                background-color: $primary_color;
+                margin: 11px;
+                height: unset;
+
+               h2, h6, p {
+                        margin-top: 46px !important;
+                        color: white;
+                        justify-content: unset;
+                    }
+                    a {
+                       padding: 10px 120px;
+                       margin-top: -10px;
+                       color: white;
+                       font-size: 20px;
+                      
+                    }
+            }
+            .left-border {
+                height: 50vh;
+            }
+
+            .warm-line{
+                margin: 200px 50px;
+                
+                a{
+                    width: 73%;
+                    font-size: 22px;
+                }
+            } 
+            .gallery img {
+                width: 100%;
+               
+            }
+            .image1 {
+                margin-top: 20px;
+            }
+            .inner-block3 {
+                margin-top: 20px;
+            }
+           
+            .fund-raising img {
+                margin-top: 20px;
+            }  
+            .fund-raising img {
+                height: 100vh;
+            }
+            .gallery .fund-raising .overlay {
+                height: 100vh;
+            }
+            .gallery .fund-raising .funding {
+                top: 240px;
+            }
+            .gallery .fund-raising .funding a {
+                padding: 15px 87px;
+            }
+        
+            .image2 img {
+                height: 49vh !important;
+            }
+            #yoga {
+                height: 88vh;
+            }
+            .register img {
+                height: 55vh;
+               
+            }
+            .background4 {
+                height: 80vh;
+            }
+            .our-team{
+                margin-left: 55px;
+                margin-right: 55px;
+                border-radius: 9px;
+                padding: 40px;
+                .our-team-block, .speak-up{
+                    a {
+                        padding: 10px 24px;
+                        font-size: 20px;
+                        width: 280px;
+                        
+                    }
+                }
+            } 
+            .register{
+                margin-left: 55px;
+                margin-right: 55px;
+                p{
+                    font-size: 21px;
+                }
+                .volunteer{
+                    .volunteer-block {
+                        text-align: center;
+                        padding: 20px;
+                        a {
+                            width: 79%;
+                            font-size: 20px;
+                            margin: auto;
+                        }
+                    }
+                } 
+
+                .advocate{
+                    .advocate-block{
+                        text-align: center;
+                        padding: 20px;
+                        a {
+                            width: 79%;
+                            font-size: 20px;
+                            margin: auto;
+                        }
+                    }
+                }
+            } 
+                     
+}
+
+@media (min-width:1440px) {
+    p {
+       font-size: 30px;
+    }
+    .banner .background {
+        height: 57vh;
+    }
+    .banner p {
+        font-size: 25px;
+       
+    }
+    header ul li a {
+        font-size: 25px;
+    }
+    .banner .banner-text p {
+        margin-top: 94px;
+    }
+    .banner .banner-img {
+        width: 98%;
+    }
+    .banner .banner-text {
+        width: 49%;
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+    .banner .banner-text h1 {
+        font-size: 83px;
+    }
+    .nav button {
+        font-size: 30px;
+    }
+    .background1 {
+        margin-top: -28px;
+       
+    }
+    section.about {
+        margin-top: -165px;
+    }
+    .support a {
+        padding: 6px 48px;
+        font-size: 39px;
+    }
+    .left-border {
+        height: 35vh;
+    }
+    .register img {
+        height: 31vh;
+    }
+
+    .register p {
+        font-size: 25px;
+    }
+    .register .volunteer .volunteer-block a {
+        font-size: 25px;
+    }
+    .register .advocate .advocate-block a {
+        width: 79%;
+        font-size: 25px;
+        margin: auto;
+    }
+    .gallery .fund-raising .overlay {
+        height: 81vh;
+    }
+    .fund-raising img {
+        height: 81vh;
+    }
+    #yoga {
+        height: 75vh;
+    }
+   .gallery .fund-raising .funding p {
+        font-size: 31px;
+    }
+    .gallery .fund-raising .funding a {
+        font-size: 30px;
+    }
+    .gallery .fund-raising .funding {
+        top: 412px;
+    }
+    footer .background4 {
+        height: 46vh;
+    }
+    .banner a {
+        bottom: 4%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
